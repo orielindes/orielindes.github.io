@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>r星今日爆料_游戏资讯与深度爆料内幕 - 玩家首选视频深挖平台</title>
+<meta name="description" content="r星今日爆料官方网站，专注游戏行业爆料、内幕解析、深度测评的原创视频内容社区，为玩家提供高清、专业、值得信赖的游戏资讯与创作者生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310151a'/%3E%3Cpath d='M18 20h28v8H27v6h16v8H27v10h-9z' fill='%23ff3b30'/%3E%3C/svg%3E">
+<style>
+:root{
+  --rx-bg:#0d1014;
+  --rx-panel:#151b22;
+  --rx-panel-2:#1b232c;
+  --rx-line:#28323d;
+  --rx-text:#e8edf2;
+  --rx-muted:#93a1b0;
+  --rx-accent:#ff3b30;
+  --rx-accent-soft:rgba(255,59,48,.14);
+  --rx-fluo:#4de2ff;
+  --rx-radius:14px;
+  --rx-shadow:0 10px 30px rgba(0,0,0,.38);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--rx-bg);
+  color:var(--rx-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+
+.rx-wrap{width:min(1180px,92%);margin:0 auto;}
+.rx-sticky{position:sticky;top:0;z-index:60;}
+
+/* 公告条 */
+.rx-notice-bar{
+  background:linear-gradient(90deg,#1b1013 0%,#251317 55%,#1b1013 100%);
+  border-bottom:1px solid #3a2126;
+  font-size:13px;
+  color:#ffd9d4;
+}
+.rx-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:9px 0;overflow:hidden;
+}
+.rx-notice-tag{
+  flex:0 0 auto;background:var(--rx-accent);color:#fff;
+  font-size:11px;font-weight:700;letter-spacing:1px;
+  padding:2px 9px;border-radius:4px;
+}
+.rx-notice-track{
+  flex:1 1 auto;display:flex;gap:34px;white-space:nowrap;
+  overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 92%,transparent);
+}
+.rx-notice-track span{display:inline-block;animation:rxMarquee 26s linear infinite;}
+@keyframes rxMarquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* 页头 */
+.rx-header{
+  background:rgba(13,16,20,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rx-line);
+}
+.rx-header-inner{
+  display:flex;align-items:center;gap:26px;
+  padding:14px 0;
+}
+.rx-logo{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.rx-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(140deg,#ff3b30,#8f1a14);
+  display:grid;place-items:center;
+  font-weight:800;font-size:19px;color:#fff;letter-spacing:-.5px;
+  box-shadow:0 4px 16px rgba(255,59,48,.35);
+}
+.rx-logo-text b{display:block;font-size:16px;letter-spacing:.5px;}
+.rx-logo-text small{display:block;font-size:10.5px;color:var(--rx-muted);letter-spacing:2.4px;}
+.rx-nav{display:flex;gap:22px;flex:1 1 auto;font-size:14.5px;color:var(--rx-muted);}
+.rx-nav a{padding:4px 0;position:relative;transition:color .2s;}
+.rx-nav a:hover{color:var(--rx-text);}
+.rx-nav a::after{
+  content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;
+  background:var(--rx-accent);transition:right .25s;
+}
+.rx-nav a:hover::after{right:0;}
+.rx-header-tools{display:flex;align-items:center;gap:12px;flex:0 0 auto;}
+.rx-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:999px;padding:6px 8px 6px 14px;
+}
+.rx-search input{
+  background:transparent;border:0;outline:0;color:var(--rx-text);
+  font-size:13.5px;width:150px;
+}
+.rx-search input::placeholder{color:#66727f;}
+.rx-search button{
+  border:0;border-radius:999px;background:var(--rx-accent);color:#fff;
+  font-size:12.5px;padding:5px 13px;font-weight:600;
+}
+.rx-btn-ghost{
+  border:1px solid var(--rx-line);background:transparent;color:var(--rx-text);
+  border-radius:999px;padding:7px 16px;font-size:13.5px;transition:.2s;
+}
+.rx-btn-ghost:hover{border-color:var(--rx-accent);color:#ff8f87;}
+.rx-btn-solid{
+  border:0;border-radius:999px;background:var(--rx-accent);color:#fff;
+  padding:8px 18px;font-size:13.5px;font-weight:600;transition:.2s;
+  box-shadow:0 4px 18px rgba(255,59,48,.32);
+}
+.rx-btn-solid:hover{background:#ff554b;transform:translateY(-1px);}
+.rx-menu-toggle{
+  display:none;border:1px solid var(--rx-line);background:var(--rx-panel);
+  color:var(--rx-text);border-radius:9px;padding:7px 11px;font-size:15px;
+}
+.rx-search-feedback{
+  display:none;font-size:12px;color:var(--rx-fluo);
+  padding:6px 2px 0;
+}
+.rx-search-feedback.is-on{display:block;}
+
+/* 首屏 */
+.rx-hero{padding:52px 0 20px;}
+.rx-hero-grid{
+  display:grid;grid-template-columns:6fr 4fr;gap:42px;align-items:center;
+}
+.rx-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:1.6px;color:var(--rx-fluo);
+  border:1px solid rgba(77,226,255,.35);border-radius:999px;
+  padding:4px 13px;margin-bottom:18px;background:rgba(77,226,255,.06);
+}
+.rx-hero h1{
+  font-size:clamp(34px,5vw,56px);line-height:1.12;letter-spacing:-1px;
+  margin-bottom:8px;
+}
+.rx-hero h1 em{
+  font-style:normal;color:var(--rx-accent);
+  background:linear-gradient(90deg,#ff3b30,#ff8a50);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.rx-hero-sub{
+  font-size:17.5px;color:#c6d1dc;margin:12px 0 18px;max-width:34em;
+}
+.rx-hero-desc{
+  font-size:14.5px;color:var(--rx-muted);margin-bottom:26px;
+}
+.rx-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px;}
+.rx-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+}
+.rx-stat{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);padding:14px 16px;
+}
+.rx-stat b{display:block;font-size:22px;color:#fff;letter-spacing:-.5px;}
+.rx-stat span{display:block;font-size:12px;color:var(--rx-muted);margin-top:2px;}
+.rx-hero-visual{
+  position:relative;border-radius:20px;overflow:hidden;
+  border:1px solid var(--rx-line);box-shadow:var(--rx-shadow);
+}
+.rx-hero-visual img{width:100%;aspect-ratio:4/5;object-fit:cover;}
+.rx-hero-badge{
+  position:absolute;left:16px;bottom:16px;right:16px;
+  background:rgba(10,13,17,.82);border:1px solid var(--rx-line);
+  border-radius:12px;padding:12px 14px;backdrop-filter:blur(6px);
+}
+.rx-hero-badge b{font-size:14px;display:block;margin-bottom:3px;}
+.rx-hero-badge span{font-size:12px;color:var(--rx-muted);}
+
+/* 通用 section */
+.rx-section{padding:54px 0;}
+.rx-section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:20px;margin-bottom:28px;flex-wrap:wrap;
+}
+.rx-section-head h2{
+  font-size:clamp(23px,3vw,30px);letter-spacing:-.4px;
+}
+.rx-section-head h2 span{color:var(--rx-accent);}
+.rx-section-head p{font-size:13.5px;color:var(--rx-muted);margin-top:6px;}
+.rx-section-tag{
+  font-size:12px;color:var(--rx-muted);letter-spacing:1px;
+}
+
+/* 焦点内容 图文左右 */
+.rx-focus-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start;
+}
+.rx-focus-main{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);overflow:hidden;
+}
+.rx-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.rx-focus-body{padding:20px 22px 22px;}
+.rx-chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.rx-chip{
+  font-size:11.5px;color:var(--rx-fluo);
+  border:1px solid rgba(77,226,255,.3);border-radius:6px;
+  padding:2px 8px;background:rgba(77,226,255,.06);
+}
+.rx-focus-body h3{font-size:21px;margin-bottom:8px;}
+.rx-focus-body p{font-size:14px;color:var(--rx-muted);margin-bottom:14px;}
+.rx-meta-row{
+  display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--rx-muted);
+  margin-bottom:14px;
+}
+.rx-act-row{display:flex;gap:9px;flex-wrap:wrap;}
+.rx-act{
+  border:1px solid var(--rx-line);background:var(--rx-panel-2);
+  color:var(--rx-muted);font-size:12.5px;padding:5px 12px;border-radius:8px;
+  transition:.2s;display:inline-flex;align-items:center;gap:5px;
+}
+.rx-act:hover{border-color:var(--rx-accent);color:#ff8f87;}
+.rx-act.is-liked{background:var(--rx-accent-soft);border-color:var(--rx-accent);color:#ff8f87;}
+.rx-act.is-saved{background:rgba(77,226,255,.1);border-color:rgba(77,226,255,.45);color:var(--rx-fluo);}
+.rx-rank-list{
+  display:flex;flex-direction:column;gap:12px;
+}
+.rx-rank-item{
+  display:grid;grid-template-columns:34px 1fr;gap:12px;
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:12px;padding:13px 15px;transition:.2s;
+}
+.rx-rank-item:hover{transform:translateX(4px);border-color:#3a4a5a;}
+.rx-rank-no{
+  font-size:17px;font-weight:800;color:#3f4d5c;line-height:1.4;
+}
+.rx-rank-item:nth-child(1) .rx-rank-no{color:var(--rx-accent);}
+.rx-rank-item h4{font-size:14.5px;margin-bottom:3px;}
+.rx-rank-item p{font-size:12.5px;color:var(--rx-muted);}
+
+/* 视频列表 */
+.rx-video-list{display:flex;flex-direction:column;gap:14px;}
+.rx-video-item{
+  display:grid;grid-template-columns:1fr;gap:14px;
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);padding:18px 20px;transition:.22s;
+}
+.rx-video-item:hover{border-color:#40505f;background:#171e26;}
+.rx-video-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;}
+.rx-video-head h3{font-size:17px;}
+.rx-video-item .rx-meta-row{margin:10px 0;}
+.rx-video-item>p{font-size:13.5px;color:var(--rx-muted);}
+.rx-video-thumb{
+  width:100%;max-width:340px;border-radius:11px;overflow:hidden;
+  border:1px solid var(--rx-line);position:relative;
+}
+.rx-video-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.rx-video-thumb::after{
+  content:"▶";position:absolute;inset:0;display:grid;place-items:center;
+  color:rgba(255,255,255,.92);font-size:22px;
+  background:rgba(6,9,13,.18);pointer-events:none;
+}
+
+/* 专题 */
+.rx-topic-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;
+}
+.rx-topic-card{
+  background:linear-gradient(170deg,#161d25,#131920);
+  border:1px solid var(--rx-line);border-radius:var(--rx-radius);
+  padding:20px 22px;display:flex;flex-direction:column;gap:10px;
+}
+.rx-topic-card.is-feature{border-color:rgba(255,59,48,.4);}
+.rx-topic-card img{border-radius:10px;aspect-ratio:16/9;object-fit:cover;width:100%;}
+.rx-topic-status{
+  display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:5px;
+  background:var(--rx-accent-soft);color:#ff8f87;border:1px solid rgba(255,59,48,.3);
+  align-self:flex-start;
+}
+.rx-topic-card h3{font-size:17px;}
+.rx-topic-card>p{font-size:13px;color:var(--rx-muted);}
+.rx-topic-items{margin-top:4px;border-top:1px dashed var(--rx-line);padding-top:10px;}
+.rx-topic-items li{
+  font-size:13px;color:#b7c3ce;padding:5px 0 5px 16px;position:relative;
+}
+.rx-topic-items li::before{
+  content:"";position:absolute;left:0;top:14px;width:6px;height:6px;
+  border-radius:50%;background:var(--rx-accent);
+}
+
+/* 深度解析 */
+.rx-deep{background:#11161c;border-top:1px solid var(--rx-line);border-bottom:1px solid var(--rx-line);}
+.rx-deep-cols{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;
+}
+.rx-deep-block h3{
+  font-size:18.5px;margin-bottom:10px;padding-left:12px;
+  border-left:3px solid var(--rx-accent);
+}
+.rx-deep-block p{font-size:14px;color:#b3c0cc;margin-bottom:13px;}
+.rx-deep-block ul{font-size:13.5px;color:#9fadb9;}
+.rx-deep-block li{padding:4px 0 4px 16px;position:relative;}
+.rx-deep-block li::before{
+  content:"›";position:absolute;left:0;color:var(--rx-accent);font-weight:700;
+}
+
+/* 作者 */
+.rx-author-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;
+}
+.rx-author{
+  display:grid;grid-template-columns:56px 1fr;gap:14px;
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);padding:18px;transition:.22s;
+}
+.rx-author:hover{border-color:#41525f;transform:translateY(-3px);}
+.rx-avatar{
+  width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+  font-weight:800;font-size:21px;color:#fff;flex:0 0 auto;
+}
+.rx-author h3{font-size:16px;margin-bottom:2px;}
+.rx-author .rx-author-field{font-size:12px;color:var(--rx-fluo);margin-bottom:6px;}
+.rx-author p{font-size:12.8px;color:var(--rx-muted);margin-bottom:9px;}
+.rx-author-stats{display:flex;gap:14px;font-size:12px;color:#8695a3;}
+.rx-author-stats b{color:var(--rx-text);}
+.rx-author-btn{
+  border:1px solid var(--rx-line);background:transparent;color:var(--rx-muted);
+  border-radius:7px;font-size:11.5px;padding:3px 10px;margin-top:9px;
+}
+.rx-author-btn:hover{border-color:var(--rx-accent);color:#ff8f87;}
+
+/* 评价 */
+.rx-comment-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;
+}
+.rx-comment{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:12px;padding:16px 18px;
+}
+.rx-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+.rx-comment-face{
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;font-weight:700;color:#0d1014;flex:0 0 auto;
+}
+.rx-comment-top b{font-size:13.5px;}
+.rx-comment-top span{font-size:11.5px;color:#78879a;margin-left:auto;}
+.rx-comment p{font-size:13.3px;color:#b7c4cf;}
+.rx-comment-stars{color:#ffc44d;font-size:12px;margin-top:8px;letter-spacing:1px;}
+
+/* 数据榜 */
+.rx-board-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
+.rx-board{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);padding:18px 20px;
+}
+.rx-board h3{font-size:15px;margin-bottom:12px;color:#dfe7ee;}
+.rx-board li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  font-size:13px;color:#a9b7c3;padding:6px 0;border-bottom:1px dashed #232c36;
+}
+.rx-board li:last-child{border-bottom:0;}
+.rx-board li b{color:var(--rx-accent);font-size:12px;}
+
+/* 动态/合作/FAQ */
+.rx-misc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;
+}
+.rx-panel{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:var(--rx-radius);padding:22px;
+}
+.rx-panel h3{font-size:16px;margin-bottom:14px;}
+.rx-news-item{padding:11px 0;border-bottom:1px dashed #232c36;}
+.rx-news-item:last-child{border-bottom:0;}
+.rx-news-item time{font-size:11.5px;color:#7c8a98;display:block;margin-bottom:3px;}
+.rx-news-item h4{font-size:13.8px;font-weight:600;color:#ccd7e1;}
+.rx-news-item p{font-size:12.5px;color:var(--rx-muted);margin-top:2px;}
+
+.rx-partner-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;}
+.rx-partner{
+  border:1px solid var(--rx-line);border-radius:9px;padding:14px 8px;
+  text-align:center;font-size:12.5px;color:#9dabba;transition:.2s;
+}
+.rx-partner:hover{border-color:var(--rx-fluo);color:var(--rx-fluo);}
+
+.rx-faq details{
+  border-bottom:1px solid #232c36;padding:10px 0;
+}
+.rx-faq summary{
+  cursor:pointer;font-size:14px;color:#d4dee7;list-style:none;
+  display:flex;justify-content:space-between;gap:10px;
+}
+.rx-faq summary::-webkit-details-marker{display:none;}
+.rx-faq summary::after{content:"+";color:var(--rx-accent);font-weight:700;}
+.rx-faq details[open] summary::after{content:"−";}
+.rx-faq details p{font-size:13px;color:var(--rx-muted);margin-top:8px;}
+
+/* 页脚 */
+.rx-footer{
+  background:#0a0d11;border-top:1px solid var(--rx-line);
+  padding:44px 0 26px;margin-top:20px;
+}
+.rx-footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px;
+}
+.rx-footer h4{font-size:13.5px;margin-bottom:12px;color:#dbe4ec;letter-spacing:.5px;}
+.rx-footer li{font-size:12.8px;color:#7e8c99;padding:4px 0;}
+.rx-footer li a:hover{color:var(--rx-accent);}
+.rx-footer-brand p{font-size:12.8px;color:#7e8c99;margin-top:10px;max-width:30em;}
+.rx-footer-bottom{
+  border-top:1px solid #1b222a;padding-top:18px;
+  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;
+  font-size:12px;color:#68757f;
+}
+
+/* 回到顶部 & toast */
+.rx-top-btn{
+  position:fixed;right:22px;bottom:26px;z-index:70;
+  width:42px;height:42px;border-radius:12px;border:1px solid var(--rx-line);
+  background:var(--rx-panel);color:var(--rx-text);font-size:17px;
+  display:none;place-items:center;box-shadow:var(--rx-shadow);
+}
+.rx-top-btn.is-on{display:grid;}
+.rx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#222c36;border:1px solid #374656;color:#e8edf2;
+  font-size:13px;padding:9px 20px;border-radius:999px;z-index:90;
+  opacity:0;pointer-events:none;transition:.28s;
+}
+.rx-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+/* 弹窗 */
+.rx-modal{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(5,8,12,.72);padding:20px;
+  place-items:center;
+}
+.rx-modal.is-on{display:grid;}
+.rx-modal-box{
+  background:var(--rx-panel);border:1px solid var(--rx-line);
+  border-radius:16px;width:min(520px,100%);padding:26px;
+  box-shadow:0 24px 60px rgba(0,0,0,.55);max-height:86vh;overflow:auto;
+}
+.rx-modal-box h3{font-size:18px;margin-bottom:12px;}
+.rx-modal-box p{font-size:13.5px;color:var(--rx-muted);margin-bottom:10px;}
+.rx-modal-close{
+  float:right;border:0;background:transparent;color:#8a97a4;font-size:20px;line-height:1;
+}
+
+*[id]{scroll-margin-top:150px;}
+
+@media (max-width:960px){
+  .rx-hero-grid{grid-template-columns:1fr;}
+  .rx-focus-grid{grid-template-columns:1fr;}
+  .rx-deep-cols{grid-template-columns:1fr;}
+  .rx-footer-grid{grid-template-columns:1fr 1fr;}
+  .rx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#11161c;border-bottom:1px solid var(--rx-line);
+    flex-direction:column;gap:0;padding:10px 0;
+  }
+  .rx-nav.is-open{display:flex;}
+  .rx-nav a{padding:11px 5%;}
+  .rx-nav a::after{display:none;}
+  .rx-header-inner{position:relative;flex-wrap:wrap;}
+  .rx-header-tools{margin-left:auto;}
+  .rx-menu-toggle{display:block;}
+  .rx-search{display:none;}
+}
+@media (max-width:620px){
+  .rx-hero-stats{grid-template-columns:1fr 1fr;}
+  .rx-footer-grid{grid-template-columns:1fr;}
+  .rx-author{grid-template-columns:1fr;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 + 页头（吸顶） -->
+<div class="rx-sticky">
+  <div class="rx-notice-bar">
+    <div class="rx-wrap rx-notice-inner">
+      <span class="rx-notice-tag">官方发布</span>
+      <div class="rx-notice-track">
+        <span>11月22日更新 · 新增《r星爆料》第 12 期深度解析：开放世界任务链设计拆解 &nbsp;|&nbsp; 创作者招募第 3 批报名开启 &nbsp;|&nbsp; 高清视频下载通道已开放 &nbsp;|&nbsp; 投稿话题 #今日爆料挑战 上线 &nbsp;|&nbsp; 11月22日更新 · 新增《r星爆料》第 12 期深度解析：开放世界任务链设计拆解 &nbsp;|&nbsp; 创作者招募第 3 批报名开启 &nbsp;|&nbsp; 高清视频下载通道已开放 &nbsp;|&nbsp; 投稿话题 #今日爆料挑战 上线</span>
+      </div>
+    </div>
+  </div>
+  <header class="rx-header">
+    <div class="rx-wrap rx-header-inner">
+      <a class="rx-logo" href="#rx-top">
+        <span class="rx-logo-mark">R</span>
+        <span class="rx-logo-text"><b>r星今日爆料</b><small>VIDEO · INSIGHT</small></span>
+      </a>
+      <nav class="rx-nav" id="rxNav">
+        <a href="#rx-focus">焦点爆料</a>
+        <a href="#rx-video">视频内容</a>
+        <a href="#rx-topic">专题企划</a>
+        <a href="#rx-deep">深度解析</a>
+        <a href="#rx-author">创作者</a>
+        <a href="#rx-comment">用户评价</a>
+        <a href="#rx-misc">企业动态</a>
+      </nav>
+      <div class="rx-header-tools">
+        <div class="rx-search">
+          <input type="text" id="rxSearchInput" placeholder="搜索爆料 / 创作者 / 专题" aria-label="站内搜索">
+          <button type="button" id="rxSearchBtn">搜索</button>
+        </div>
+        <button class="rx-btn-ghost" type="button" id="rxSubmitOpen">投稿入口</button>
+        <button class="rx-btn-solid" type="button" id="rxJoinOpen">加入社区</button>
+        <button class="rx-menu-toggle" type="button" id="rxMenuToggle" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+    <div class="rx-wrap"><div class="rx-search-feedback" id="rxSearchFeedback"></div></div>
+  </header>
+</div>
+
+<main id="rx-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="rx-hero">
+    <div class="rx-wrap rx-hero-grid">
+      <div>
+        <span class="rx-hero-kicker">● 官方网站 · 游戏爆料内容生态</span>
+        <h1>r星今日爆料</h1>
+        <p class="rx-hero-sub">一家专注游戏行业爆料、内幕解析与深度测评的原创视频品牌，让每一条爆料都经得起推敲。</p>
+        <p class="rx-hero-desc">作为深耕游戏垂直领域的视频内容平台，r星今日爆料官方网站持续运营高清原创内容，聚合一线爆料创作者、评测团队与深度作者，以专业视角还原行业真相。我们相信真实、专业与持续陪伴，才是内容生态最稳固的底色。</p>
+        <div class="rx-hero-actions">
+          <a class="rx-btn-solid" href="#rx-video">观看今日爆料</a>
+          <a class="rx-btn-ghost" href="#rx-topic">查看专题企划</a>
+          <button class="rx-btn-ghost" type="button" id="rxShareOpen">分享官网</button>
+        </div>
+        <div class="rx-hero-stats">
+          <div class="rx-stat"><b data-rx-count="3860">3860</b><span>累计原创视频（条）</span></div>
+          <div class="rx-stat"><b data-rx-count="126">126</b><span>签约创作者（位）</span></div>
+          <div class="rx-stat"><b data-rx-count="940000">94万</b><span>社区月活跃用户</span></div>
+        </div>
+      </div>
+      <div class="rx-hero-visual">
+        <img alt="r星今日爆料首屏主视觉：深夜工作室内多屏剪辑台与爆料信息流的大幅原创插画" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 800'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230f1620'/%3E%3Cstop offset='1' stop-color='%23231318'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ff3b30'/%3E%3Cstop offset='1' stop-color='%23ff8a50'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='800' fill='url(%23g1)'/%3E%3Cg opacity='.28' stroke='%233b4c5c' stroke-width='1'%3E%3Cpath d='M0 140h640M0 300h640M0 460h640M0 620h640M120 0v800M280 0v800M440 0v800'/%3E%3C/g%3E%3Crect x='64' y='120' width='360' height='216' rx='12' fill='%23151d26' stroke='%23394a5a'/%3E%3Crect x='84' y='144' width='200' height='12' rx='6' fill='%23ff3b30'/%3E%3Crect x='84' y='172' width='300' height='9' rx='4' fill='%23354453'/%3E%3Crect x='84' y='192' width='256' height='9' rx='4' fill='%23354453'/%3E%3Crect x='84' y='212' width='286' height='9' rx='4' fill='%23354453'/%3E%3Crect x='84' y='248' width='140' height='62' rx='8' fill='url(%23g2)'/%3E%3Crect x='240' y='248' width='140' height='62' rx='8' fill='%2324313d'/%3E%3Crect x='420' y='120' width='156' height='150' rx='12' fill='%231b242e' stroke='%23394a5a'/%3E%3Ccircle cx='498' cy='176' r='30' fill='none' stroke='%234de2ff' stroke-width='4'/%3E%3Cpath d='M488 162l30 14-30 14z' fill='%234de2ff'/%3E%3Crect x='150' y='400' width='340' height='230' rx='14' fill='%23151d26' stroke='%23394a5a'/%3E%3Crect x='174' y='426' width='292' height='10' rx='5' fill='%23354453'/%3E%3Crect x='174' y='452' width='240' height='10' rx='5' fill='%232b3947'/%3E%3Crect x='174' y='478' width='270' height='10' rx='5' fill='%232b3947'/%3E%3Crect x='174' y='516' width='120' height='86' rx='8' fill='url(%23g2)'/%3E%3Crect x='308' y='516' width='158' height='86' rx='8' fill='%23212c37'/%3E%3Ccircle cx='104' cy='700' r='44' fill='%231b242e' stroke='%23ff3b30' stroke-width='3'/%3E%3Ctext x='104' y='710' font-family='sans-serif' font-size='30' font-weight='700' fill='%23ff3b30' text-anchor='middle'%3ER%3C/text%3E%3Crect x='176' y='676' width='300' height='12' rx='6' fill='%232b3947'/%3E%3Crect x='176' y='702' width='210' height='12' rx='6' fill='%23212c37'/%3E%3C/svg%3E">
+        <div class="rx-hero-badge">
+          <b>今日头条爆料 · 第 12 期</b>
+          <span>开放世界任务链设计拆解 · 时长 18:42 · 高清原片已上线</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="rx-section" id="rx-focus">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">FOCUS / 焦点爆料</span>
+          <h2>今天值得点开的<span>三条爆料</span></h2>
+          <p>r星今日爆料编辑组每日筛选社区高热度线索，逐条核实后再发布。</p>
+        </div>
+      </div>
+      <div class="rx-focus-grid">
+        <article class="rx-focus-main">
+          <img alt="r星爆料节目演播室内两位主播对谈游戏引擎升级话题的现场画面" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='h1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2319232e'/%3E%3Cstop offset='1' stop-color='%232a1a1d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23h1)'/%3E%3Cg opacity='.3' stroke='%23415566'%3E%3Cpath d='M0 90h800M0 220h800M0 350h800'/%3E%3C/g%3E%3Crect x='60' y='80' width='280' height='290' rx='14' fill='%23151d26' stroke='%233d4e5e'/%3E%3Ccircle cx='200' cy='170' r='46' fill='%23ff3b30' opacity='.85'/%3E%3Crect x='120' y='240' width='160' height='12' rx='6' fill='%233b4b5a'/%3E%3Crect x='140' y='272' width='120' height='10' rx='5' fill='%232b3947'/%3E%3Crect x='380' y='80' width='360' height='130' rx='12' fill='%231b242e' stroke='%233d4e5e'/%3E%3Crect x='402' y='104' width='180' height='10' rx='5' fill='%234de2ff'/%3E%3Crect x='402' y='128' width='300' height='9' rx='4' fill='%232f3e4d'/%3E%3Crect x='402' y='150' width='250' height='9' rx='4' fill='%232f3e4d'/%3E%3Crect x='402' y='176' width='120' height='16' rx='8' fill='%23ff8a50' opacity='.8'/%3E%3Crect x='380' y='240' width='170' height='130' rx='12' fill='%23212c37' stroke='%233d4e5e'/%3E%3Crect x='570' y='240' width='170' height='130' rx='12' fill='%23212c37' stroke='%233d4e5e'/%3E%3Ccircle cx='465' cy='300' r='26' fill='none' stroke='%23ff3b30' stroke-width='3'/%3E%3Cpath d='M458 288l18 12-18 12z' fill='%23ff3b30'/%3E%3Crect x='600' y='278' width='110' height='9' rx='4' fill='%233b4b5a'/%3E%3Crect x='600' y='300' width='80' height='9' rx='4' fill='%232b3947'/%3E%3Crect x='600' y='326' width='96' height='9' rx='4' fill='%232b3947'/%3E%3C/svg%3E">
+          <div class="rx-focus-body">
+            <div class="rx-chip-row">
+              <span class="rx-chip">行业观察</span>
+              <span class="rx-chip">深度解析</span>
+              <span class="rx-chip">官方发布</span>
+            </div>
+            <h3>引擎迭代传闻逐条核对：从招聘信息到专利文件的完整链路</h3>
+            <p>编辑部把过去两周的公开线索全部做了时间轴梳理，包括招聘岗位描述变化、技术专利提交记录与开发者访谈片段，并邀请两位从业者给出交叉判断。视频里我们会明确标注哪些是确证、哪些是推测，避免让爆料变成噪音。</p>
+            <div class="rx-meta-row">
+              <span>作者：@老K显微镜</span>
+              <span>播放 42.7万</span>
+              <span>点赞 <b class="rx-like-num" data-num="8620">8620</b></span>
+              <span>收藏 1.3万</span>
+            </div>
+            <div class="rx-act-row">
+              <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+              <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+              <button class="rx-act rx-copy-btn" type="button" data-copy="焦点爆料：引擎迭代传闻逐条核对">🔗 复制链接</button>
+              <button class="rx-act rx-comment-toggle" type="button" data-target="rxFocusComment">💬 展开评论</button>
+            </div>
+            <div id="rxFocusComment" style="display:none;margin-top:14px;border-top:1px dashed var(--rx-line);padding-top:12px;">
+              <div class="rx-news-item"><time>11月22日 10:26</time><h4>@推着小车看世界</h4><p>时间轴做得太细了，看完才知道哪些所谓“实锤”其实只是推测。</p></div>
+              <div class="rx-news-item"><time>11月22日 09:48</time><h4>@引擎灰盒</h4><p>专利那段的讲解很清楚，建议后续做一期专门讲技术文档怎么读。</p></div>
+              <div class="rx-news-item"><time>11月21日 23:12</time><h4>@夜班剪辑室</h4><p>希望这类深度内容保持更新频率，别被热搜节奏带着跑。</p></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="rx-rank-list">
+          <div class="rx-rank-item">
+            <div class="rx-rank-no">01</div>
+            <div>
+              <h4>三小时连播实测：新版本经济系统是否真的改动了收益曲线</h4>
+              <p>实测向 · 数据采样 120 组 · 附带表格下载</p>
+            </div>
+          </div>
+          <div class="rx-rank-item">
+            <div class="rx-rank-no">02</div>
+            <div>
+              <h4>创作者访谈：做爆料三年，最难的是不被情绪牵着走</h4>
+              <p>人物访谈 · 时长 26 分钟 · 内容生态观察</p>
+            </div>
+          </div>
+          <div class="rx-rank-item">
+            <div class="rx-rank-no">03</div>
+            <div>
+              <h4>开放世界地图设计复盘：从任务密度看叙事节奏</h4>
+              <p>设计拆解 · 交互图解 8 张 · 适合新人创作者参考</p>
+            </div>
+          </div>
+          <div class="rx-rank-item">
+            <div class="rx-rank-no">04</div>
+            <div>
+              <h4>社区问答：爆料信息的可信度应该怎么判断</h4>
+              <p>知识科普 · 7 个判断维度 · 评论区持续补充</p>
+            </div>
+          </div>
+          <div class="rx-rank-item">
+            <div class="rx-rank-no">05</div>
+            <div>
+              <h4>本周口碑榜：观众票选最值得信赖的五档爆料节目</h4>
+              <p>数据榜单 · 参与投票 2.4 万人 · 每周更新</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频内容 -->
+  <section class="rx-section" id="rx-video" style="padding-top:10px;">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">VIDEO / 高清视频</span>
+          <h2>r星今日爆料 · <span>视频内容精选</span></h2>
+          <p>每个条目都包含摘要、标签与真实数据，方便你快速判断值不值得看。</p>
+        </div>
+        <a class="rx-btn-ghost" href="#rx-author">认识创作者</a>
+      </div>
+      <div class="rx-video-list">
+
+        <article class="rx-video-item">
+          <div class="rx-video-head">
+            <h3>爆料播报 041 期：三条待核实线索的现场复盘</h3>
+            <div class="rx-chip-row">
+              <span class="rx-chip">今日爆料</span>
+              <span class="rx-chip">线索核实</span>
+            </div>
+          </div>
+          <div class="rx-video-thumb">
+            <img alt="爆料播报第四十一期现场复盘视频封面，主播拿着线索板讲解" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23141b23'/%3E%3Crect x='40' y='40' width='260' height='280' rx='12' fill='%231d2731' stroke='%233a4b5b'/%3E%3Crect x='60' y='64' width='140' height='10' rx='5' fill='%23ff3b30'/%3E%3Crect x='60' y='92' width='200' height='9' rx='4' fill='%2332404e'/%3E%3Crect x='60' y='114' width='170' height='9' rx='4' fill='%2332404e'/%3E%3Crect x='60' y='136' width='190' height='9' rx='4' fill='%2332404e'/%3E%3Crect x='60' y='176' width='210' height='120' rx='8' fill='%2323313d'/%3E%3Ccircle cx='340' cy='120' r='40' fill='none' stroke='%234de2ff' stroke-width='3'/%3E%3Cpath d='M352 120l-26 16V104z' fill='%234de2ff'/%3E%3Crect x='340' y='190' width='250' height='12' rx='6' fill='%232c3a47'/%3E%3Crect x='340' y='218' width='200' height='12' rx='6' fill='%23232f3a'/%3E%3Crect x='340' y='246' width='220' height='12' rx='6' fill='%23232f3a'/%3E%3Crect x='340' y='274' width='150' height='12' rx='6' fill='%23ff8a50' opacity='.7'/%3E%3C/svg%3E">
+          </div>
+          <p>把本周收到的所有线索按可信度分成三档，逐条说明为什么有的能播、有的只能继续等。节目末尾留下开放式提问，邀请观众一起补充线索来源。</p>
+          <div class="rx-meta-row">
+            <span>作者：@爆料台前</span>
+            <span>播放 28.3万</span>
+            <span>点赞 <b class="rx-like-num" data-num="6120">6120</b></span>
+            <span>收藏 8430</span>
+            <span>时长 22:16</span>
+          </div>
+          <div class="rx-act-row">
+            <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+            <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+            <button class="rx-act rx-copy-btn" type="button" data-copy="爆料播报041期：三条待核实线索的现场复盘">🔗 复制链接</button>
+          </div>
+        </article>
+
+        <article class="rx-video-item">
+          <div class="rx-video-head">
+            <h3>技术拆解：从专利文件里能读出什么</h3>
+            <div class="rx-chip-row">
+              <span class="rx-chip">知识科普</span>
+              <span class="rx-chip">教程干货</span>
+            </div>
+          </div>
+          <p>面向普通玩家的专利阅读入门，教你分辨申请主体、权利要求范围与附图之间的对应关系。视频附赠一份可下载的阅读清单，适合做内容的朋友收藏。</p>
+          <div class="rx-meta-row">
+            <span>作者：@专利阅读员</span>
+            <span>播放 16.9万</span>
+            <span>点赞 <b class="rx-like-num" data-num="4833">4833</b></span>
+            <span>收藏 1.1万</span>
+            <span>时长 15:04</span>
+          </div>
+          <div class="rx-act-row">
+            <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+            <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+            <button class="rx-act rx-copy-btn" type="button" data-copy="技术拆解：从专利文件里能读出什么">🔗 复制链接</button>
+          </div>
+        </article>
+
+        <article class="rx-video-item">
+          <div class="rx-video-head">
+            <h3>夜谈：爆料内容面对热度时该守住什么</h3>
+            <div class="rx-chip-row">
+              <span class="rx-chip">人物访谈</span>
+              <span class="rx-chip">行业观察</span>
+            </div>
+          </div>
+          <p>三位不同体量的创作者聊了同一件事：当一条未经核实的消息突然爆火，标题怎么写、节奏怎么控、评论区怎么运营。没有标准答案，但有一些可操作的边界。</p>
+          <div class="rx-meta-row">
+            <span>作者：@夜班剪辑室</span>
+            <span>播放 11.4万</span>
+            <span>点赞 <b class="rx-like-num" data-num="3078">3078</b></span>
+            <span>收藏 5210</span>
+            <span>时长 31:52</span>
+          </div>
+          <div class="rx-act-row">
+            <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+            <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+            <button class="rx-act rx-copy-btn" type="button" data-copy="夜谈：爆料内容面对热度时该守住什么">🔗 复制链接</button>
+          </div>
+        </article>
+
+        <article class="rx-video-item">
+          <div class="rx-video-head">
+            <h3>摄影机位与剪辑节奏：爆料类视频怎么做才不糊</h3>
+            <div class="rx-chip-row">
+              <span class="rx-chip">创作幕后</span>
+              <span class="rx-chip">实用技巧</span>
+            </div>
+          </div>
+          <p>从双机位布光到信息密度控制，完整复盘一期 20 分钟爆料节目的制作流程。含剪辑工程截图与节奏表，适合新人创作者照着练习。</p>
+          <div class="rx-meta-row">
+            <span>作者：@镜头后的人</span>
+            <span>播放 9.7万</span>
+            <span>点赞 <b class="rx-like-num" data-num="2611">2611</b></span>
+            <span>收藏 7045</span>
+            <span>时长 18:33</span>
+          </div>
+          <div class="rx-act-row">
+            <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+            <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+            <button class="rx-act rx-copy-btn" type="button" data-copy="摄影机位与剪辑节奏：爆料类视频怎么做才不糊">🔗 复制链接</button>
+          </div>
+        </article>
+
+        <article class="rx-video-item">
+          <div class="rx-video-head">
+            <h3>社区挑战：用一个线索做出一条完整短片</h3>
+            <div class="rx-chip-row">
+              <span class="rx-chip">创作挑战</span>
+              <span class="rx-chip">社区活动</span>
+            </div>
+          </div>
+          <p>本期挑战给出同一条线索，六位创作者交出六种完全不同的表达。投票通道已开启，优胜作品将进入官方频道月度推荐位。</p>
+          <div class="rx-meta-row">
+            <span>作者：@r星内容实验室</span>
+            <span>播放 7.2万</span>
+            <span>点赞 <b class="rx-like-num" data-num="1980">1980</b></span>
+            <span>收藏 3120</span>
+            <span>时长 12:10</span>
+          </div>
+          <div class="rx-act-row">
+            <button class="rx-act rx-like-btn" type="button" data-liked="0">👍 点赞</button>
+            <button class="rx-act rx-save-btn" type="button">♡ 收藏</button>
+            <button class="rx-act rx-copy-btn" type="button" data-copy="社区挑战：用一个线索做出一条完整短片">🔗 复制链接</button>
+            <button class="rx-act rx-vote-btn" type="button">🗳 投票</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="rx-section" id="rx-topic" style="padding-top:14px;">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">SERIES / 专题企划</span>
+          <h2>持续运营的<span>三大内容企划</span></h2>
+          <p>专题由编辑部与社区共编，更新状态实时同步，每一期都可回看。</p>
+        </div>
+      </div>
+      <div class="rx-topic-grid">
+
+        <article class="rx-topic-card is-feature">
+          <img alt="专题企划主视觉：爆料线索墙与时间轴连线的概念插画" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23161d25'/%3E%3Cg stroke='%23ff3b30' stroke-width='2' opacity='.75'%3E%3Cpath d='M60 200L150 100L250 160L380 70'/%3E%3C/g%3E%3Cg fill='%231e2933' stroke='%233a4b5b'%3E%3Crect x='40' y='182' width='44' height='44' rx='8'/%3E%3Crect x='128' y='78' width='44' height='44' rx='8'/%3E%3Crect x='228' y='138' width='44' height='44' rx='8'/%3E%3Crect x='358' y='48' width='44' height='44' rx='8'/%3E%3C/g%3E%3Ccircle cx='150' cy='100' r='7' fill='%234de2ff'/%3E%3Ccircle cx='380' cy='70' r='7' fill='%23ff8a50'/%3E%3C/svg%3E">
+          <span class="rx-topic-status">更新中 · 已上线 12 期</span>
+          <h3>爆料时间轴计划</h3>
+          <p>把散落的线索放回时间轴，让每一条爆料都有上下文。企划以公开信息为唯一素材来源，强调可复核、可追溯。</p>
+          <ul class="rx-topic-items">
+            <li>第 12 期：开放世界任务链设计拆解</li>
+            <li>第 11 期：招聘信息里的技术路线变化</li>
+            <li>第 10 期：从财报电话会看内容投入节奏</li>
+          </ul>
+        </article>
+
+        <article class="rx-topic-card">
+          <span class="rx-topic-status">更新中 · 已上线 8 期</span>
+          <h3>创作者面对面</h3>
+          <p>不做成功学访谈，只聊真实的创作困境：选题枯竭、数据焦虑、团队磨合与长期主义。</p>
+          <ul class="rx-topic-items">
+            <li>第 8 期：一个人做节目的第三年</li>
+            <li>第 7 期：三人小组如何分工做深度内容</li>
+            <li>第 6 期：从图文转型视频踩过的坑</li>
+          </ul>
+        </article>
+
+        <article class="rx-topic-card">
+          <span class="rx-topic-status">报名中 · 第 3 批</span>
+          <h3>今日爆料挑战赛</h3>
+          <p>面向社区创作者的季度赛事，鼓励用严谨的方式表达观点。评审维度包含线索质量、表达清晰度与剪辑完成度。</p>
+          <ul class="rx-topic-items">
+            <li>报名时间：11月20日 至 12月10日</li>
+            <li>作品时长：3 至 15 分钟原创视频</li>
+            <li>优胜权益：官方推荐位与创作基金</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S4/S15 深度解析（关键词解析 ≥800字） -->
+  <section class="rx-section rx-deep" id="rx-deep">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">INSIGHT / 深度解析</span>
+          <h2>读懂 <span>r星今日爆料</span>：一个爆料内容品牌如何建立信任</h2>
+          <p>约 900 字，分四个角度，说清楚我们对“爆料”这件事的理解。</p>
+        </div>
+      </div>
+      <div class="rx-deep-cols">
+        <div class="rx-deep-block">
+          <h3>一、为什么“爆料”需要被制度化</h3>
+          <p>在信息流速极快的今天，一条未经核实的消息可以在两小时内传遍整个社区，也可以在两天内被彻底推翻。r星今日爆料的起点，正是对这种落差的长期观察。我们发现，观众真正需要的并不是最快的那条消息，而是一条能够被复述、被引用、被追溯的内容。因此，我们把这个品牌的核心工作定义为“把爆料变成可被检验的内容产品”，而不是追逐热搜的短跑。</p>
+          <p>具体到流程上，r星今日爆料的每一条视频都会经过三道工序：线索登记、交叉验证、边界标注。线索登记要求注明来源类型，是公开文件、招聘信息、社交平台发言，还是从业者转述；交叉验证要求至少两个独立信息源互相印证，或者由具备相关背景的从业者做出判断；边界标注则要求在成片中明确区分“已确证”“高概率”“待观察”三种状态。这个流程并不新颖，但它把一件容易失控的事情，变成了可以稳定交付的内容生产方式。</p>
+          <h3>二、内容生态里的“专业”到底指什么</h3>
+          <p>很多视频平台都在强调专业，但对游戏爆料类内容来说，专业不等于术语密度，也不等于语速和气势。r星今日爆料理解的专业，是三件很朴素的事：第一，讲清楚信息来源，不把推测写成结论；第二，给观众留下判断空间，而不是替观众下结论；第三，出错时及时更正，并在显眼位置说明修改内容。这三件事听起来简单，长期坚持却很难，因为它意味着放弃一部分更容易获得流量的表达方式。</p>
+          <p>也正因为如此，我们更愿意把 r星今日爆料 定位成一个社区型的内容生态，而不是单方面的播出窗口。创作者在这里提交选题、共享线索、互相校对；观众在这里补充现场观察、指出错误、参与投票。平台的角色是制定规则、提供工具、维护秩序，而不是垄断话语权。这种结构决定了内容品质不是靠某一个人撑起来的，而是靠一套持续运转的协作机制。</p>
+        </div>
+        <div class="rx-deep-block">
+          <h3>三、从品牌故事到用户口碑的闭环</h3>
+          <p>r星今日爆料的品牌故事并不复杂：几位长期做游戏内容的创作者，厌倦了“先发后删”的循环，决定做一个反过来的地方——宁可慢半天，也要把话说清楚。这个决定在早期让我们失去了不少热点，但也意外积累了一批非常稳定的观众。他们会主动在评论区补充线索，会指出视频里的时间轴错误，会在其他平台替我们解释“这条还在观察阶段”。口碑就是这样一点点长出来的，不是靠一次爆款，而是靠一次次不出错的累积。</p>
+          <p>我们把这种关系称为“值得信赖的慢变量”。它体现在数据上，是复看率和收藏率长期高于同类内容；体现在社区里，是投稿邮箱每天收到的线索数量稳定增长；体现在企业动态里，是越来越多创作者愿意把首发内容放在这里。r星今日爆料并不追求成为最大的平台，但希望成为在这个垂直领域里，观众遇到争议信息时第一个想到去核对的地方。</p>
+          <h3>四、面向未来的三件小事</h3>
+          <p>面向下一阶段，r星今日爆料会继续做三件小事。第一，完善线索库的公开程度，让更多可核验材料以结构化方式沉淀下来，供创作者和观众共同使用；第二，把创作工具做得更实用，包括选题评估表、信息源可靠性清单与剪辑节奏模板，降低新人创作者的入门成本；第三，坚持社区共治，把评审、投票与纠错机制做得更透明，让每一次内容发布都能被追溯。</p>
+          <p>我们相信，爆料的价值不在于它有多劲爆，而在于它是否经得起时间。r星今日爆料官方网站会持续运营这套机制，也欢迎更多创作者加入，一起把“真实”这件事做得更扎实一些。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="rx-section" id="rx-author">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">CREATORS / 创作者矩阵</span>
+          <h2>r星今日爆料的<span>五位常驻创作者</span></h2>
+          <p>他们各自擅长不同方向，共同构成平台的内容底座。</p>
+        </div>
+      </div>
+      <div class="rx-author-grid">
+
+        <article class="rx-author">
+          <div class="rx-avatar" style="background:linear-gradient(140deg,#ff3b30,#8f1a14);">K</div>
+          <div>
+            <h3>老K显微镜</h3>
+            <div class="rx-author-field">擅长：行业观察 · 线索核对</div>
+            <p>前游戏媒体编辑，做爆料内容六年。习惯把每一条消息拆成“证据、推断、结论”三段来讲，视频节奏偏慢但信息密度高，深受深度观众喜欢。</p>
+            <div class="rx-author-stats"><span>作品 <b>214</b></span><span>粉丝 <b>18.6万</b></span></div>
+            <button class="rx-act rx-author-btn" type="button" data-author="老K显微镜">查看档案</button>
+          </div>
+        </article>
+
+        <article class="rx-author">
+          <div class="rx-avatar" style="background:linear-gradient(140deg,#4de2ff,#1b6f8a);">專</div>
+          <div>
+            <h3>专利阅读员</h3>
+            <div class="rx-author-field">擅长：知识科普 · 技术拆解</div>
+            <p>理工科背景，专做技术文档的通俗化解读。擅长把专利、财报与技术白皮书翻译成人话，是平台里收藏率最高的创作者之一。</p>
+            <div class="rx-author-stats"><span>作品 <b>97</b></span><span>粉丝 <b>9.2万</b></span></div>
+            <button class="rx-act rx-author-btn" type="button" data-author="专利阅读员">查看档案</button>
+          </div>
+        </article>
+
+        <article class="rx-author">
+          <div class="rx-avatar" style="background:linear-gradient(140deg,#ffb347,#a35a10);">夜</div>
+          <div>
+            <h3>夜班剪辑室</h3>
+            <div class="rx-author-field">擅长：人物访谈 · 创作幕后</div>
+            <p>独立剪辑师出身，镜头语言克制。喜欢在访谈里保留沉默和停顿，认为那些没被剪掉的几秒钟，往往才是被访者最真实的状态。</p>
+            <div class="rx-author-stats"><span>作品 <b>146</b></span><span>粉丝 <b>12.4万</b></span></div>
+            <button class="rx-act rx-author-btn" type="button" data-author="夜班剪辑室">查看档案</button>
+          </div>
+        </article>
+
+        <article class="rx-author">
+          <div class="rx-avatar" style="background:linear-gradient(140deg,#7d5cff,#3a238f);">镜</div>
+          <div>
+            <h3>镜头后的人</h3>
+            <div class="rx-author-field">擅长：实用技巧 · 教程干货</div>
+            <p>十年摄像经验，如今专注做创作教学。课程特点是“全部可复现”，每个机位、每个参数都会给出实际环境与拍摄条件，不卖玄学。</p>
+            <div class="rx-author-stats"><span>作品 <b>183</b></span><span>粉丝 <b>15.1万</b></span></div>
+            <button class="rx-act rx-author-btn" type="button" data-author="镜头后的人">查看档案</button>
+          </div>
+        </article>
+
+        <article class="rx-author">
+          <div class="rx-avatar" style="background:linear-gradient(140deg,#3ddc97,#127a4e);">爆</div>
+          <div>
+            <h3>爆料台前</h3>
+            <div class="rx-author-field">擅长：日常播报 · 社区运营</div>
+            <p>平台常驻主播，负责每周爆料播报与社区答疑。风格亲切、语速偏快，擅长把复杂线索讲成观众能跟上的一条主线，是新人入坑的第一站。</p>
+            <div class="rx-author-stats"><span>作品 <b>258</b></span><span>粉丝 <b>22.7万</b></span></div>
+            <button class="rx-act rx-author-btn" type="button" data-author="爆料台前">查看档案</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价 -->
+  <section class="rx-section" id="rx-comment" style="padding-top:12px;">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">VOICE / 用户评价</span>
+          <h2>来自社区的<span>真实声音</span></h2>
+          <p>六条不同长度的评价，来自不同使用场景，未经修饰。</p>
+        </div>
+      </div>
+      <div class="rx-comment-grid">
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#ffd166;">林</span>
+            <b>林间有雾</b><span>11月22日</span>
+          </div>
+          <p>追了一年多，最大的感受是“稳”。标题不夸张，内容不含糊，看完不会有一种被耍了的感觉。</p>
+          <div class="rx-comment-stars">★★★★★</div>
+        </div>
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#8ecae6;">阿</span>
+            <b>阿柴的周末</b><span>11月21日</span>
+          </div>
+          <p>作为刚入行的新人，这里的创作教程帮了大忙。尤其是剪辑节奏那一期，我照着改了自己的片子，完播率确实上去了。</p>
+          <div class="rx-comment-stars">★★★★★</div>
+        </div>
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#b5e48c;">灰</span>
+            <b>灰色引擎</b><span>11月21日</span>
+          </div>
+          <p>有次视频里一个时间点标错了，我在评论区指出来，第二天就看到官方置顶了更正说明。这个态度挺难得的。</p>
+          <div class="rx-comment-stars">★★★★★</div>
+        </div>
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#ffadad;">老</span>
+            <b>老陈皮</b><span>11月20日</span>
+          </div>
+          <p>节目质量很稳定，但个人希望更新再快一点，有时候热点过去了才看到视频。当然也能理解，核实需要时间。</p>
+          <div class="rx-comment-stars">★★★★☆</div>
+        </div>
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#a0c4ff;">半</span>
+            <b>半杯凉茶</b><span>11月19日</span>
+          </div>
+          <p>最喜欢创作者面对面这个专题。没有打鸡血，也没有卖惨，就是很平实地聊做内容的日常，反而更有共鸣。</p>
+          <div class="rx-comment-stars">★★★★★</div>
+        </div>
+
+        <div class="rx-comment">
+          <div class="rx-comment-top">
+            <span class="rx-comment-face" style="background:#ffc6ff;">夏</span>
+            <b>夏天的显卡</b><span>11月18日</span>
+          </div>
+          <p>投稿过一次线索，居然真的被采用了，还收到了回复说明核实过程。这种被认真对待的感觉挺少见的。</p>
+          <div class="rx-comment-stars">★★★★★</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 + S7 辅助区 -->
+  <section class="rx-section" id="rx-misc" style="padding-top:10px;">
+    <div class="rx-wrap">
+      <div class="rx-section-head">
+        <div>
+          <span class="rx-section-tag">DATA / 榜单与动态</span>
+          <h2>榜单、动态与<span>你关心的问题</span></h2>
+          <p>数据每周更新，动态实时同步，FAQ 持续补充。</p>
+        </div>
+      </div>
+
+      <div class="rx-board-grid" style="margin-bottom:26px;">
+        <div class="rx-board">
+          <h3>🔥 本周热度榜</h3>
+          <ul>
+            <li><span>引擎迭代传闻逐条核对</span><b>42.7万</b></li>
+            <li><span>爆料播报 041 期</span><b>28.3万</b></li>
+            <li><span>专利文件里的技术线索</span><b>16.9万</b></li>
+            <li><span>夜谈：热度与边界</span><b>11.4万</b></li>
+          </ul>
+        </div>
+        <div class="rx-board">
+          <h3>🌱 新人榜</h3>
+          <ul>
+            <li><span>@线索小站</span><b>+8240</b></li>
+            <li><span>@深夜核对员</span><b>+6910</b></li>
+            <li><span>@一帧半秒</span><b>+5320</b></li>
+            <li><span>@资料收集癖</span><b>+4180</b></li>
+          </ul>
+        </div>
+        <div class="rx-board">
+          <h3>⭐ 口碑榜</h3>
+          <ul>
+            <li><span>创作者面对面</span><b>4.9</b></li>
+            <li><span>爆料时间轴计划</span><b>4.8</b></li>
+            <li><span>技术拆解系列</span><b>4.8</b></li>
+            <li><span>爆料播报</span><b>4.7</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rx-misc-grid">
+
+        <div class="rx-panel">
+          <h3>企业动态 / 更新日志</h3>
+          <div class="rx-news-item">
+            <time>2026年11月22日</time>
+            <h4>第 12 期深度解析上线</h4>
+            <p>新增开放世界任务链设计拆解，配套资料可在视频页下载。</p>
+          </div>
+          <div class="rx-news-item">
+            <time>2026年11月20日</time>
+            <h4>创作者招募第 3 批开启</h4>
+            <p>面向游戏资讯、技术科普与幕后记录方向的创作者开放报名。</p>
+          </div>
+          <div class="rx-news-item">
+            <time>2026年11月18日</time>
+            <h4>线索库结构升级</h4>
+            <p>支持按信息源类型筛选，创作者可查看线索的公开处理状态。</p>
+          </div>
+          <div class="rx-news-item">
+            <time>2026年11月15日</time>
+            <h4>高清下载通道开放</h4>
+            <p>签约创作者可下载带字幕的高清成片素材用于二次创作。</p>
+          </div>
+        </div>
+
+        <div class="rx-panel">
+          <h3>合作品牌 / 内容伙伴</h3>
+          <div class="rx-partner-grid">
+            <div class="rx-partner">星图影像</div>
+            <div class="rx-partner">帧率工作室</div>
+            <div class="rx-partner">深空字幕组</div>
+            <div class="rx-partner">拾光数据</div>
+            <div class="rx-partner">夜航录音棚</div>
+            <div class="rx-partner">衡准咨询</div>
+          </div>
+          <h3 style="margin-top:22px;">创作灵感 / 工具</h3>
+          <ul class="rx-topic-items">
+            <li>标题建议：把结论前置，避免绝对化表述</li>
+            <li>剪辑思路：先做信息图，再配旁白</li>
+            <li>选题评估：三个独立信息源优先</li>
+          </ul>
+        </div>
+
+        <div class="rx-panel rx-faq">
+          <h3>常见问题（FAQ）</h3>
+          <details>
+            <summary>如何向 r星今日爆料 投稿线索？</summary>
+            <p>可通过页面顶部“投稿入口”提交，注明信息来源类型与可获得的最原始材料。编辑组会在三个工作日内回复处理状态。</p>
+          </details>
+          <details>
+            <summary>视频可以转载或二次剪辑吗？</summary>
+            <p>原创视频版权归创作者与平台共同所有。非商业用途的二次创作请注明出处；商业用途需通过合作渠道取得书面授权。</p>
+          </details>
+          <details>
+            <summary>为什么有些爆料要“等一等”才发布？</summary>
+            <p>因为核实需要交叉验证。我们宁可晚发布，也不希望传播一条最终被推翻的信息，这也是用户信赖我们的原因之一。</p>
+          </details>
+          <details>
+            <summary>创作者入驻有什么要求？</summary>
+            <p>需要有稳定更新能力与基本的核实意识，方向包括游戏资讯、技术科普、创作幕后与人物访谈。入驻后享有线索库与剪辑素材支持。</p>
+          </details>
+          <details>
+            <summary>发现视频内容有误怎么办？</summary>
+            <p>可在评论区留言或通过反馈入口提交，注明具体时间点与依据。确认后会置顶更正说明，并在更新日志中记录。</p>
+          </details>
+          <details>
+            <summary>平台的更新频率是怎样的？</summary>
+            <p>爆料播报每周两期，深度解析每周一期，专题企划按季度推进，社区挑战赛每季度一次。具体安排会在公告条同步。</p>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="rx-footer">
+  <div class="rx-wrap">
+    <div class="rx-footer-grid">
+      <div class="rx-footer-brand">
+        <a class="rx-logo" href="#rx-top">
+          <span class="rx-logo-mark">R</span>
+          <span class="rx-logo-text"><b>r星今日爆料</b><small>VIDEO · INSIGHT</small></span>
+        </a>
+        <p>r星今日爆料官方网站，专注游戏行业爆料与深度解析的原创视频品牌。我们以专业、真实、持续陪伴为原则，构建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#rx-focus">焦点爆料</a></li>
+          <li><a href="#rx-video">视频内容</a></li>
+          <li><a href="#rx-topic">专题企划</a></li>
+          <li><a href="#rx-deep">深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与参与</h4>
+        <ul>
+          <li><a href="#rx-author">创作者矩阵</a></li>
+          <li><a href="#rx-comment">用户评价</a></li>
+          <li><a href="#rx-misc">企业动态</a></li>
+          <li><button class="rx-act" type="button" id="rxFooterSubmit" style="border:0;background:none;padding:0;color:#7e8c99;font-size:12.8px;">投稿入口</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li>品牌故事 · 持续运营中</li>
+          <li>内容生态 · 原创正版</li>
+          <li>合作联系：partner@rx-video.example</li>
+          <li>投稿邮箱：submit@rx-video.example</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rx-footer-bottom">
+      <span>© 2026 r星今日爆料 官方网站 · 版权所有</span>
+      <span>持续运营 · 备案号：京ICP备00000000号 · 品质内容，用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="rx-top-btn" type="button" id="rxTopBtn" aria-label="回到顶部">↑</button>
+<div class="rx-toast" id="rxToast"></div>
+
+<div class="rx-modal" id="rxModal">
+  <div class="rx-modal-box" id="rxModalBox"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航折叠 */
+  var menuToggle = document.getElementById('rxMenuToggle');
+  var nav = document.getElementById('rxNav');
+  if(menuToggle && nav){
+    menuToggle.addEventListener('click', function(){
+      nav.classList.toggle('is-open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){ nav.classList.remove('is-open'); }
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('rxToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2200);
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('rxSearchInput');
+  var searchBtn = document.getElementById('rxSearchBtn');
+  var searchFeedback = document.getElementById('rxSearchFeedback');
+  function doSearch(){
+    var kw = searchInput ? searchInput.value.trim() : '';
+    if(!searchFeedback) return;
+    if(!kw){
+      searchFeedback.textContent = '请输入关键词，例如“爆料”“创作者”或“专题”。';
+    }else{
+      searchFeedback.textContent = '已为你在 r星今日爆料 站内筛选“' + kw + '”相关内容，建议从焦点爆料与视频内容区开始查看。';
+      searchFeedback.classList.add('is-on');
+    }
+    searchFeedback.classList.add('is-on');
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', doSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* 点赞 */
+  document.querySelectorAll('.rx-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.rx-video-item, .rx-focus-body');
+      var numEl = item ? item.querySelector('.rx-like-num') : null;
+      var liked = btn.getAttribute('data-liked') === '1';
+      if(numEl){
+        var n = parseInt(numEl.getAttribute('data-num'), 10) || 0;
+        n = liked ? Math.max(0, n - 1) : n + 1;
+        numEl.setAttribute('data-num', n);
+        numEl.textContent = n.toLocaleString('zh-CN');
+      }
+      btn.setAttribute('data-liked', liked ? '0' : '1');
+      btn.classList.toggle('is-liked', !liked);
+      btn.textContent = liked ? '👍 点赞' : '👍 已点赞';
+      showToast(liked ? '已取消点赞' : '感谢点赞，已记录你的支持');
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('.rx-save-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-saved');
+      btn.textContent = on ? '♥ 已收藏' : '♡ 收藏';
+      showToast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  function copyText(text, cb){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ cb(true); }, function(){ cb(false); });
+    }else{
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        cb(ok);
+      }catch(err){ cb(false); }
+    }
+  }
+  document.querySelectorAll('.rx-copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-copy') || 'r星今日爆料';
+      copyText(title + ' · r星今日爆料官方网站', function(ok){
+        showToast(ok ? '链接已复制，可分享给朋友' : '复制失败，请手动记录标题');
+      });
+    });
+  });
+
+  /* 评论展开 */
+  document.querySelectorAll('.rx-comment-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-target');
+      var box = id ? document.getElementById(id) : null;
+      if(!box) return;
+      var shown = box.style.display !== 'none';
+      box.style.display = shown ? 'none' : 'block';
+      btn.textContent = shown ? '💬 展开评论' : '💬 收起评论';
+    });
+  });
+
+  /* 投票 */
+  document.querySelectorAll('.rx-vote-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.textContent = '✓ 已投票';
+      btn.classList.add('is-saved');
+      showToast('投票成功，结果将在本期挑战赛结束后公布');
+    });
+  });
+
+  /* 弹窗系统 */
+  var modal = document.getElementById('rxModal');
+  var modalBox = document.getElementById('rxModalBox');
+  function openModal(html){
+    if(!modal || !modalBox) return;
+    modalBox.innerHTML = html;
+    modal.classList.add('is-on');
+    var closeBtn = modalBox.querySelector('.rx-modal-close');
+    if(closeBtn){ closeBtn.addEventListener('click', closeModal); }
+  }
+  function closeModal(){
+    if(modal){ modal.classList.remove('is-on'); }
+  }
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal){ closeModal(); }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ closeModal(); }
+    });
+  }
+
+  function openSubmit(){
+    openModal(
+      '<button class="rx-modal-close" type="button" aria-label="关闭">×</button>' +
+      '<h3>投稿入口 · r星今日爆料</h3>' +
+      '<p>欢迎提交线索、选题或成片。请尽量附上信息来源类型与原始材料，方便编辑组核实。</p>' +
+      '<p style="color:#c6d1dc;">投稿邮箱：submit@rx-video.example</p>' +
+      '<p>处理时效：三个工作日内回复。科普类与人物访谈类选题长期优先。</p>' +
+      '<p style="color:#93a1b0;font-size:12.5px;">提示：请勿提交侵犯他人隐私或涉及未公开商业机密的内容。</p>'
+    );
+  }
+  var submitOpen = document.getElementById('rxSubmitOpen');
+  if(submitOpen){ submitOpen.addEventListener('click', openSubmit); }
+  var footerSubmit = document.getElementById('rxFooterSubmit');
+  if(footerSubmit){ footerSubmit.addEventListener('click', openSubmit); }
+
+  var joinOpen = document.getElementById('rxJoinOpen');
+  if(joinOpen){
+    joinOpen.addEventListener('click', function(){
+      openModal(
+        '<button class="rx-modal-close" type="button" aria-label="关闭">×</button>' +
+        '<h3>加入 r星今日爆料社区</h3>' +
+        '<p>社区面向所有对游戏爆料与深度内容感兴趣的观众与创作者开放。</p>' +
+        '<p>你可以：参与线索补充、报名季度挑战赛、申请创作者入驻、订阅每周更新提醒。</p>' +
+        '<p style="color:#c6d1dc;">报名通道：11月20日 至 12月10日，第 3 批创作者招募同步进行中。</p>'
+      );
+    });
+  }
+
+  var shareOpen = document.getElementById('rxShareOpen');
+  if(shareOpen){
+    shareOpen.addEventListener('click', function(){
+      copyText('r星今日爆料 · 游戏爆料与深度解析视频社区', function(ok){
+        showToast(ok ? '官网链接已复制，可分享到微信、微博或 QQ' : '复制失败，请稍后重试');
+      });
+    });
+  }
+
+  /* 作者档案弹窗 */
+  var authorBrief = {
+    '老K显微镜':'前游戏媒体编辑，做爆料内容六年，擅长把线索拆成证据、推断与结论三段式呈现，是平台深度内容的主要作者之一。',
+    '专利阅读员':'理工科背景，专注技术文档通俗化解读，把专利、财报与技术白皮书翻译成普通观众能听懂的语言，收藏率长期领先。',
+    '夜班剪辑室':'独立剪辑师出身，镜头语言克制，擅长人物访谈与创作幕后记录，认为没有被剪掉的停顿往往最真实。',
+    '镜头后的人':'十年摄像经验，专注创作教学，强调“全部可复现”，每个机位与参数都会给出实际拍摄环境与条件。',
+    '爆料台前':'平台常驻主播，负责每周爆料播报与社区答疑，风格亲切语速偏快，擅长把复杂线索讲成清晰主线。'
+  };
+  document.querySelectorAll('.rx-author-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var intro = authorBrief[name] || '';
+      openModal(
+        '<button class="rx-modal-close" type="button" aria-label="关闭">×</button>' +
+        '<h3>' + name + ' · 创作者档案</h3>' +
+        '<p>' + intro + '</p>' +
+        '<p style="color:#93a1b0;font-size:12.5px;">该创作者的内容已在本页视频区展示，可通过收藏与点赞支持。</p>'
+      );
+    });
+  });
+
+  /* 数字滚动 */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('[data-rx-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-rx-count'), 10) || 0;
+      var current = 0;
+      var steps = 40;
+      var timer = setInterval(function(){
+        current += target / steps;
+        if(current >= target){
+          current = target;
+          clearInterval(timer);
+        }
+        var val = Math.floor(current);
+        if(target >= 10000){
+          el.textContent = (val / 10000).toFixed(0) + '万';
+        }else{
+          el.textContent = val.toLocaleString('zh-CN');
+        }
+      }, 28);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var heroStats = document.querySelector('.rx-hero-stats');
+    if(heroStats){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ runCount(); io.disconnect(); }
+        });
+      }, {threshold:0.3});
+      io.observe(heroStats);
+    }
+  }else{
+    runCount();
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('rxTopBtn');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 420){ topBtn.classList.add('is-on'); }
+      else{ topBtn.classList.remove('is-on'); }
+    });
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+})();
+</script>
+</body>
+          </html>
